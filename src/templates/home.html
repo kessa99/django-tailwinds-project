@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="mt-mept mr-mepd ml-mepg mb-mepb">
+    <section>
+        <div class="bg-slate-300 flex h-1/2 justify-center items-center text-center  font-extrabold uppercase text-5xl pt-pt100 bg-back  bg-no-repeat bg-center ">
+            <div class=" pt-20 relative">
+                <img src="../static/img/man.png" alt="">
+                <img src="../static/img/elements.png" class="absolute left-0 top-0">
+            </div> 
+            <div class="hidden md:inline-block">
+                <p>
+                    Bienvenue sur  TaxIQ <br>
+                    Votre Solution Fiscale Intelligente
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="text-3xl font-semibold text-gray-800 text-center py-8">
+            Pourquoi choisir <br>  Tax<span class="text-rose-600">IQ </span>
+        </h1>
+        <div class="grid grid-cols-3 gap-4">
+            <div class="text-justify col-span-2 bg-red-200 py-8 bg-[url('../static/img/why2.svg')]  bg-no-repeat bg-center rounded-lg">
+                <h1 class="text-center"><span class="text-rose-600">Calcul Précis d'Impôts </span> <br> TaxIQ effectue des calculs fiscaux précis en fonction de votre <br> 
+                    situation financière, en prenant en compte les dernières réglementations fiscales</h1>
+            </div>
+            <div class="bg-orange-100 rounded-lg bg-[url('../static/img/why2.svg')]  bg-no-repeat bg-center text-justify py-8 ">
+                <h1 class="text-center"><span class="text-rose-600">Calcul Précis d'Impôts </span> <br> Accédez à des guides fiscaux complets et à des conseils personnalisés pour optimiser vos déclarations fiscales et maximiser vos économies</h1>
+            </div>
+            <div class=" rounded-lg bg-amber-100 bg-[url('../static/img/calendarnew.svg')]  bg-no-repeat bg-center py-8 " >
+                <h1 class="text-center"> <span class="text-rose-600" >Calendrier Fiscal:</span> <br> Recevez des rappels de dates limites pour ne jamais manquer une échéance fiscale importante.</h1>
+            </div>
+            <div class="rounded-lg col-span-2 bg-lime-200 bg-[url('../static/img/guide.svg')]  bg-no-repeat bg-center py-8 ">
+                <h1 class="text-center">
+                    <span class="text-rose-600">Guides et Conseils : </span> <br> Accédez à des guides fiscaux complets et à des conseils personnalisés pour optimiser vos déclarations fiscales et maximiser vos économies.</h1>
+            </div>
+          </div>
+    </section>
+</div>
+
+
+{% endblock %}
