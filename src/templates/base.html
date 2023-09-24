@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header class="bg-red z-50 fixed top-0 w-full shadow">
-        <nav id="main-nav" class="bg-white max w-5xl mx-auto p-6 flex items-center justify-between">
+    <header class="bg-red z-50 fixed top-0 w-full shadow bg-white">
+        <nav id="main-nav" class="bg-white max w-5xl mx-auto p-6 flex items-center justify-between bg-white">
             <a href="top" aria-label="Page d'accueil du site">
                 <span class="text-lg lg:text-xl justify-center" aria-hidden="true">
                     Tax <strong><span class="text-rose-600">IQ</span></strong>
@@ -24,24 +24,85 @@
     
             <ul id="toggle-menu" class=" absolute top-full left-0 -translate-y-full -z-10 text-gray-800 borde-b border-gray-200 flex flex-col items-center md:static md:z-10 md:w-win md:transform-none md:border-none md:flex-row">
                 <li class="py-4 md:py-0 md:mr-6">
-                    <a href="#" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Accueil </a>
+                    <a href="{% url 'home' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Accueil </a>
                 </li>
                 <li class="py-4 md:py-0 md:mr-6">
-                    <a href="#" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Services</a>
+                    <a href="{% url 'services' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Services</a>
                 </li>
                 <li class="py-4 md:py-0 md:mr-6">
-                    <a href="#" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Informations</a>
+                    <a href="{% url 'informations' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Informations</a>
                 </li>
                 <li class="py-4 md:py-0 md:mr-6">
-                    <a href="#" class="text-sm uppercase font-semibold w-full hover:text-rose-600">aide</a>
+                    <a href="{% url 'aide' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">aide</a>
                 </li>
                 <li class="py-4 md:py-0 md:mr-6">
-                    <a href="#" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Connexion</a>
+                    <a href="{% url 'login' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Connexion</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     {% block content %}{% endblock %}
+
+    <footer class="flex flex-col bg-amber-100">
+        <div class="grid grid-cols-5 gap-4 text-center">
+            <div class="">
+                <img src="../static/img/logonew.png" alt="" class="w-40px">
+            </div>
+            
+            <div class="bloc footer-service">
+                <h3 class="mb-4"> informations </h3>
+                <ul class="list-service">
+                    <li> <a href="" class="hover:text-rose-600">Comment ça marche</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Faq</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Qui sommes nous</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Services</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Forum</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Bog</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Aide</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="bloc footer-service">
+                <h3 class="mb-4"> Ressources fiscales  </h3>
+                <ul class="list-service">
+                    <li> <a href="" class="hover:text-rose-600">Bénin</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Burkina Faso</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Guinée-Bissau</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Mali</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Niger</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Sénégal</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Togo</a></li>
+                </ul>
+            </div>
+
+            <div class="bloc footer-service">
+                <h3 class="mb-4"> Articles de blog </h3>
+                <ul class="list-service">
+                    <li> <a href="" class="hover:text-rose-600">L’importance de la formalisation</a></li>
+                    <li> <a href="" class="hover:text-rose-600">L’origine de le la fiscalité</a></li>
+                    <li> <a href="" class="hover:text-rose-600">A quoi sert les impôts</a></li>
+                    <li> <a href="" class="hover:text-rose-600">C’est quoi le redressement fiscal</a></li>
+                </ul>
+            </div>
+
+            <div class="bloc footer-service">
+                <ul class="list-service mb-4">
+                    <li> <a href="" class="hover:text-rose-600">Copyright</a></li>
+                    <li> <a href="" class="hover:text-rose-600">olitique de confidentialité </a></li>
+                    <li> <a href="" class="hover:text-rose-600">Termes et conditions d’utilisations</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Politique de sécurité </a></li>
+                    <li> <a href="" class="hover:text-rose-600">Facebook</a></li>
+                    <li> <a href="" class="hover:text-rose-600">LinkedIn </a></li>
+                    <li> <a href="" class="hover:text-rose-600">Twitter </a></li>
+                    <li> <a href="" class="hover:text-rose-600">Adresse électronique</a></li>
+                    <li> <a href="" class="hover:text-rose-600">Google </a></li>
+                    <li> <a href="" class="hover:text-rose-600">création de compte </a></li>
+                    <li> <a href="" class="hover:text-rose-600">Connexion</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
