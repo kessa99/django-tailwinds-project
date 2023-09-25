@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <header class="bg-red z-50 fixed top-0 w-full shadow bg-white">
-        <nav id="main-nav" class="bg-white max w-5xl mx-auto p-6 flex items-center justify-between bg-white">
+    <header class="z-50 fixed top-0 w-full shadow bg-white">
+        <nav id="main-nav" class="max w-5xl mx-auto p-6 flex items-center justify-between bg-white">
             <a href="top" aria-label="Page d'accueil du site">
                 <span class="text-lg lg:text-xl justify-center" aria-hidden="true">
                     Tax <strong><span class="text-rose-600">IQ</span></strong>
@@ -37,6 +37,12 @@
                 </li>
                 <li class="py-4 md:py-0 md:mr-6">
                     <a href="{% url 'login' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Connexion</a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="{% url 'signup' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">Sign Up</a>
+                </li>
+                <li class="py-4 md:py-0 md:mr-6">
+                    <a href="{% url 'dashbord' %}" class="text-sm uppercase font-semibold w-full hover:text-rose-600">dashbord</a>
                 </li>
             </ul>
         </nav>

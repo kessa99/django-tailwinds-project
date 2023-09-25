@@ -10,13 +10,14 @@ module.exports = {
         'mepd': '30px',
       },
       colors: {
-        white: {
-          'slate': '#fff',
-        }
+        white: {},
       },
       maxWidth:{
         'taxmw': '1600px',
         '600px': '600px',
+      },
+      gridColumn: {
+        '300': '300px',
       },
       topLeftCenter: {
         top: '50%',

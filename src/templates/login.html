@@ -6,22 +6,27 @@
             <form action="">
                 <h1 class="text-3xl text-center">Login</h1>
                 <div class="w-full h-12 my-7 mx-0 ">
-                    <input class="w-full h-full rounded-none outline-none border border-solid border-gray-600 rounded-3xl text-base " type="text", placeholder="Username">
+                    <input class="w-full h-full rounded-lg outline-none border border-solid border-gray-600 rounded-3xl text-base " type="text", placeholder="Username">
                 </div>
                 <div class="w-full h-12 my-7 mx-0 ">
-                    <input class="w-full h-full rounded-none outline-none border border-solid border-gray-600 rounded-3xl text-base " type="password", placeholder="Password">
+                    <input class="w-full h-full rounded-lg outline-none border border-solid border-gray-600 rounded-3xl text-base " type="password", placeholder="Password">
                 </div>
-                <div class="remenber-forgot">
+
+                <div class="flex">
+                    <a href="#" class="lg:rounded-full inline-flex items-center py-4 px-3 bg-slate-700 text-white rounded-lg text-sm font-medium hover:bg-blue-900">
+                     connexion
+                    </a>  
                     <label>
-                        <input class="w-full h-full rounded-none outline-none border border-solid border-gray-600 rounded-3xl text-base " type="checkbox">
-                        Se souvenir de moi
+                    <input class="w-full h-5 rounded-none outline-none border border-solid border-gray-600 rounded-3xl text-base " type="checkbox">
+                    Se souvenir de moi
                     </label>
-                    <a href="#" class="lg:rounded-full inline-flex items-center py-4 px-3 text-white rounded-lg text-sm font-medium">
-                        Mot de passe oublie?
-                    </a> 
                 </div>
+                
+                <a href="#" class="lg:rounded-full inline-flex items-center py-4 px-3 text-white rounded-lg text-sm font-medium">
+                    Mot de passe oublie?
+                </a> 
                 <div class="register-link">
-                    <p>Avez-vous un compte? <a href="signup.html"> Creer un compte</a> </p>
+                    <p>Avez-vous un compte? <a href="{% url 'signup' %}"> Creer un compte</a> </p>
                 </div>
             </form>
         </div>

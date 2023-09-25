@@ -23,6 +23,8 @@ urlpatterns = [
     path('services/', views.services_view, name='services'),
     path('informations/', views.information_view, name='informations'),
     path('login/', views.login_view, name='login'),
+    path('signup/', views.signup_view, name='signup'),
+    path('dashbord/', views.dash_view, name='dashbord'),
     path('admin/', admin.site.urls),
 ]
 
