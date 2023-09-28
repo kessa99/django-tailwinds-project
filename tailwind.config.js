@@ -3,14 +3,18 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily:{
+        'popins': ['Poppins', 'sans']
+      },
       margin: {
-        'mept': '70px',
+        'mept': '80px',
         'mepb': '70px',
         'mepg': '30px',
         'mepd': '30px',
       },
       colors: {
-        white: {},
+        'footer1': '#111',
+        'footer2': '#000',
       },
       maxWidth:{
         'taxmw': '1600px',
