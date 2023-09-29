@@ -19,6 +19,7 @@ module.exports = {
       maxWidth:{
         'taxmw': '1600px',
         '600px': '600px',
+        '430px': '430px'
       },
       gridColumn: {
         '300': '300px',
